@@ -11,19 +11,21 @@
 
 - Create MySQL DB
 - Copy `.env.example` to `.env` and change the MySQL connection URL
-- Seamless deployment with docker
-
-```bash
-$ docker compose up -d
-```
-
-- Or, run the following commands:
+- Run the following commands:
 
 ```bash
 $ npm install
 $ npm run db:migrate
 $ npm run db:seed
 ```
+
+- Seamless deployment with docker
+
+```bash
+$ docker compose up -d
+```
+
+- Or, run it on local environment using commands below
 
 ## Compile and run microservices
 
