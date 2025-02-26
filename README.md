@@ -40,3 +40,7 @@ $ npm run start:teacher:dev
   - User: `john.doe@elm.ai`
   - Password: `supersecret`
 - In `Auth Type`, select bearer and set token with provided `accessToken` from `api/auth/login`
+
+## Live Documentation
+
+- Live documentation without any of steps above can be found at [http://8.219.89.94:4200/docs](http://8.219.89.94:4200/docs)
