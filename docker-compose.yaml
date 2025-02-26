@@ -1,0 +1,25 @@
+services:
+  api-gateway:
+    container_name: api-gateway
+    build:
+      target: production
+      context: .
+      args:
+        - APP=api-gateway
+    restart: always
+    ports:
+      - 4200:4200
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+  teacher:
+    container_name: teacher-service
+    build:
+      target: production
+      context: .
+      args:
+        - APP=teacher
+    restart: always
+    ports:
+      - 4201:4200
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
